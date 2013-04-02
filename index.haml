@@ -3,6 +3,8 @@
   %head
     %script{:src => "GibGen.js", :type => "text/javascript"}
   %body{:onload => "init(document.form)", :style => "background-color: white"}
+    %div{:style => "position:fixed;right:0;width:100px;background-color:rgba('220,220,220,0.5');top:20px;"}
+      %a{:href => "http://yolk.cc"} Y O L
     %h1 Markov &#9829; Admires 
     %p 
       Use the 
@@ -420,3 +422,15 @@
       %div
         %p Then paste below and submit!
         %iframe{:src => "https://docs.google.com/forms/d/1XwOt4qsngtXUsS-E71Jzqs9GYpl2qyJHnA6h9wKTKB4/viewform?embedded=true", :width => "400", :height => "600"} Loading…
+      :javascript
+          var _gauges = _gauges || [];
+          (function() {
+            var t   = document.createElement('script');
+            t.type  = 'text/javascript';
+            t.async = true;
+            t.id    = 'gauges-tracker';
+            t.setAttribute('data-site-id', '515a5017f5a1f564f8000088');
+            t.src = '//secure.gaug.es/track.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(t, s);
+          })();
