@@ -3,7 +3,16 @@
   %head
     %script{:src => "GibGen.js", :type => "text/javascript"}
   %body{:onload => "init(document.form)", :style => "background-color: white"}
-    %h2 Markov &#9829; Admires 
+    %h1 Markov &#9829; Admires 
+    %p 
+      Use the 
+      %a{:href => "http://en.wikipedia.org/wiki/Markov_chain"} Markov Chain 
+      generator below along with every update until today scraped from FB.
+    %p 
+      %em
+        Special Thanks to 
+        %a{:href => "http://www.judisdaid.com"}Judd Morissey
+        for teaching me about Markov chains.
     %form#form{:action => "", :name => "form"}
       Input (enter any text or use the scraped status updates pre-filled below)
       %br/
@@ -408,3 +417,6 @@
         %input{:name => "level", :type => "radio", :value => "5"}/
       = succeed "6" do
         %input{:checked => "checked", :name => "level", :type => "radio", :value => "6"}/
+      %div
+        %p Then paste below and submit!
+        %iframe{:src => "https://docs.google.com/forms/d/1XwOt4qsngtXUsS-E71Jzqs9GYpl2qyJHnA6h9wKTKB4/viewform?embedded=true", :width => "400", :height => "600"} Loading…
