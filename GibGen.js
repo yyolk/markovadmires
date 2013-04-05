@@ -4,7 +4,6 @@
 
 function init(form)
 {
-form.Samples.selectedIndex=1;
 generate_gibberish(form);
 }
 
@@ -99,7 +98,6 @@ for (i = 0; i < 500; i++) {
 
 function clear_all(form)
 {
-form.Samples.value = "-";
 form.intext.value = ""
 form.outtext.value = ""
 }
