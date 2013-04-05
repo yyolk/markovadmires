@@ -56,14 +56,13 @@
           %a{:href => "https://www.facebook.com/dafnaganani"}Dafna Ganani
         %iframe{:src => "https://www.facebook.com/video/embed?video_id=10151528913397162", :width => "564", :height => "320", :frameborder => "0"}
       :javascript
-          var _gauges = _gauges || [];
-          (function() {
-            var t   = document.createElement('script');
-            t.type  = 'text/javascript';
-            t.async = true;
-            t.id    = 'gauges-tracker';
-            t.setAttribute('data-site-id', '515a5017f5a1f564f8000088');
-            t.src = '//secure.gaug.es/track.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(t, s);
-          })();
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37547647-1']);
+        _gaq.push(['_setDomainName', 'yolk.cc']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
