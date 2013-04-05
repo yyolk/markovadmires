@@ -101,3 +101,8 @@ function clear_all(form)
 form.intext.value = ""
 form.outtext.value = ""
 }
+
+function addSalutation(form)
+{
+   form.outtext.value = "";
+}
